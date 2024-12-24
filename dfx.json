@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "web3project1_backend": {
+      "main": "src/web3project1_backend/main.mo",
+      "type": "motoko"
+    },
+    "web3project1_frontend": {
+      "dependencies": [
+        "web3project1_backend"
+      ],
+      "source": [
+        "src/web3project1_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "web3project1_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
